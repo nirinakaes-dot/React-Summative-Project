@@ -1,15 +1,22 @@
 import { useState } from "react"
 
-export default function ProjectForm(onSubmission){
+export default function ProjectForm({onSubmission}){
     const [ProjectName, setProjectName]= useState('')
     const [ProjectDescription, setProjectDescription]= useState('')
 
-    const Submission = () =>{
-        if(!ProjectName) return ( 'Please Enter The Name Of Your Project')
-        if(!ProjectDescription) return('Please Enter A Description Of Your Project')
-        onSubmission=({ProjectName, ProjectDescription}) }
-    setProjectDescription('')
-    setProjectName('')
+    const Submission = (e) =>{
+        e.preventDefault()
+        
+        if(!ProjectName) {alert( 'Please Enter The Name Of Your Project')
+             return } 
+
+        if(!ProjectDescription){alert('Please Enter A Description Of Your Project') 
+            return}
+
+        onSubmission({ProjectName, ProjectDescription}) 
+        setProjectDescription('')
+        setProjectName('')
+    }
 
 
 
@@ -17,7 +24,7 @@ export default function ProjectForm(onSubmission){
         <>
         <section>
 
-             <form>
+             <form onSubmit={Submission}>
                 <h2>Add Project</h2>
 
                 <label>Project Name</label>
@@ -31,7 +38,7 @@ export default function ProjectForm(onSubmission){
                 value={ProjectDescription}
                 onChange={(e)=> setProjectDescription(e.target.value)}></textarea>
                 
-                <button onClick={onSubmission}>Add Project</button>
+                <button type="submit">Add Project</button>
 
             </form>
 
