@@ -20,15 +20,15 @@ export default function App(){
   return(
     <>
     <NavBar />
-    <div className='flex-row'>
+    <div className='grid grid-cols-2 gap-2'>
 
-      <div>
+      <div className='bg-pink-200'>
     
     <ProjectForm onSubmission={Submission} />
 
       </div>
 
-    <div>
+    <div className='bg-yellow-50'>
 
     <BarSearch onSearch={setQuery} />
 
