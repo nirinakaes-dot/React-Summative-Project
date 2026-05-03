@@ -5,8 +5,12 @@ export default function ProjectForm({onSubmission}){
     const [ProjectDescription, setProjectDescription]= useState('')
 
     const Submission = (e) =>{
+
+  //////////////////////Prevent Reloading of page/////////////////      
         e.preventDefault()
-        
+
+  ////////////////////////////Validation ///////////////////////////
+
         if(!ProjectName) {alert( 'Please Enter The Name Of Your Project')
              return } 
 
@@ -14,6 +18,8 @@ export default function ProjectForm({onSubmission}){
             return}
 
         onSubmission({ProjectName, ProjectDescription}) 
+
+ //////////////////////////////////Clears the Input//////////////
         setProjectDescription('')
         setProjectName('')
     }
