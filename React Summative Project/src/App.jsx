@@ -28,7 +28,7 @@ export default function App(){
 
       </div>
 
-    <div className='rounded-3xl border border-sky-200 bg-white/75 p-6 shadow-sm backdrop-blur-sm'>
+    <div className='overflow-auto rounded-3xl border border-sky-200 bg-white/75 p-6 shadow-sm backdrop-blur-sm'>
 
     <BarSearch onSearch={setQuery} />
 

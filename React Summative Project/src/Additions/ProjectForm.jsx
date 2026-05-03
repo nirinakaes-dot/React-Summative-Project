@@ -37,7 +37,7 @@ export default function ProjectForm({onSubmission}){
 
                 <label className="font-medium text-slate-700">Project Name</label>
                 <input
-                className="m-5 rounded-3xl border border-sky-200 bg-sky-50 px-4 py-2 outline-none"
+                className="m-5 focus:bg-sky-100 rounded-3xl border border-sky-200 bg-sky-50 px-4 py-2 outline-none"
                 type="text" 
                 value={ProjectName}
                 onChange={(e)=> setProjectName(e.target.value)}></input> 
@@ -45,11 +45,11 @@ export default function ProjectForm({onSubmission}){
 
                 <label className="px-4 font-medium text-slate-700">Project Description</label>
                 <textarea 
-                className="rounded-3xl border border-sky-200 bg-sky-50 px-3 py-4 "
+                className="focus:bg-sky-100 rounded-3xl border border-sky-200 bg-sky-50 px-3 py-4 "
                 value={ProjectDescription}
                 onChange={(e)=> setProjectDescription(e.target.value)}></textarea>
                 <br></br>
-                <button className="rounded-xl bg-sky-700 px-10 py-2 text-white" type="submit">+ Add Project</button>
+                <button className="hover:bg-sky-500 rounded-xl bg-sky-700 px-10 py-2 text-white" type="submit">+ Add Project</button>
 
             </form>
 
