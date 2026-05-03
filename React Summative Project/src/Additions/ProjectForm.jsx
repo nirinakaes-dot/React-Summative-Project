@@ -21,12 +21,12 @@ export default function ProjectForm(onSubmission){
                 <input
                 type="text" 
                 value={ProjectName}
-                onChange={(e)=setProjectName(e.target.value)}></input>
+                onChange={(e)=> setProjectName(e.target.value)}></input>
 
                 <label>Project Description</label>
                 <textarea 
                 value={ProjectDescription}
-                onChange={(e)=setProjectDescription(e.target.value)}></textarea>
+                onChange={(e)=> setProjectDescription(e.target.value)}></textarea>
                 
                 <button>Add Project</button>
 
