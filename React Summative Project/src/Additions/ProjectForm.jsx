@@ -8,6 +8,9 @@ export default function ProjectForm(onSubmission){
         if(!ProjectName) return ( 'Please Enter The Name Of Your Project')
         if(!ProjectDescription) return('Please Enter A Description Of Your Project')
         onSubmission=({ProjectName, ProjectDescription}) }
+    setProjectDescription('')
+    setProjectName('')
+
 
 
     return(
