@@ -1,13 +1,13 @@
 import { useState } from "react"
 
-export default function ProjectForm(){
+export default function ProjectForm(onSubmission){
     const [ProjectName, setProjectName]= useState('')
     const [ProjectDescription, setProjectDescription]= useState('')
 
     const Submission = () =>{
         if(!ProjectName) return ( 'Please Enter The Name Of Your Project')
         if(!ProjectDescription) return('Please Enter A Description Of Your Project')
-        onSubmission=({ProjectName,ProjectDescription}) }
+        onSubmission=({ProjectName, ProjectDescription}) }
 
 
     return(
