@@ -1,7 +1,10 @@
 
 
-export default function BarSearch(e){
-    e.preventDefault()
+export default function BarSearch({onSearch}){
+    const Search = (e)=>{
+        e.preventDefault()
+    }
+
     
 
     return(
