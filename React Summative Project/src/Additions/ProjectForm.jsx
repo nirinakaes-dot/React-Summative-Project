@@ -8,15 +8,15 @@ export default function ProjectForm(){
     return(
         <>
         <section>
-            
+
              <form>
                 <h2>Add Project</h2>
 
                 <label>Project Name</label>
-                <input type="text"></input>
+                <input type="text" value={ProjectName}></input>
 
                 <label>Project Description</label>
-                <input type="typearea"></input>
+                <textarea value={ProjectDescription}></textarea>
                 
                 <button>Add Project</button>
 
