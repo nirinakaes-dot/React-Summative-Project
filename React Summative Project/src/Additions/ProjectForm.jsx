@@ -35,15 +35,18 @@ export default function ProjectForm({onSubmission}){
 
                 <label>Project Name</label>
                 <input
+                className="bg-white rounded-3xl m-5 "
                 type="text" 
                 value={ProjectName}
-                onChange={(e)=> setProjectName(e.target.value)}></input>
+                onChange={(e)=> setProjectName(e.target.value)}></input> 
+                <br></br>
 
-                <label>Project Description</label>
+                <label className="px-4">Project Description</label>
                 <textarea 
+                className="bg-white px-3 rounded-3xl py-4"
                 value={ProjectDescription}
                 onChange={(e)=> setProjectDescription(e.target.value)}></textarea>
-                
+                <br></br>
                 <button type="submit">Add Project</button>
 
             </form>

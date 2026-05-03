@@ -20,11 +20,28 @@ export default function App(){
   return(
     <>
     <NavBar />
+    <div className='flex-row'>
 
+      <div>
+    
     <ProjectForm onSubmission={Submission} />
+
+      </div>
+
+    <div>
+
     <BarSearch onSearch={setQuery} />
+
    {Filtered.map((Project)=>
    (<CardProjects key= {Project.ProjectName} project={Project} />)) }
+    
+
+
+    </div>
+    
+      
+    </div>
+
     
     
     </>
