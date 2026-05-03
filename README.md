@@ -58,7 +58,6 @@ Displays a single project card with the project name and description. Receives a
 ### `Contact.jsx`
 A simple contact section at the bottom of the page with a mailto link.
 
- open [http://localhost:5173](http://localhost:5173) in your browser.
 
 ## Usage
 
@@ -76,4 +75,5 @@ Made by **Nina Adora** as part of the Moringa School Module 3 Summative Project.
 ## License
 Licensed by MIT
 
-### Link To Live Site -
+ ### Link to live site - open [http://localhost:5173](http://localhost:5173) in your browser.
+
