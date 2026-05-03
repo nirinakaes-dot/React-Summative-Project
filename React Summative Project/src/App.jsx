@@ -7,19 +7,24 @@ import { useState } from 'react'
 
 
 export default function App(){
+  
   const [Projects, setProjects]= useState([])
 
   const Submission = (newProject) => {
     setProjects([...Projects, newProject])
   }
+   const [query, setQuery] = useState('')
+
+  const Filtered = Projects.filter((Project)=> Project.ProjectName.toLowerCase().includes(query.toLowerCase()))
 
   return(
     <>
     <NavBar />
 
     <ProjectForm onSubmission={Submission} />
-    <BarSearch />
-    <CardProjects />
+    <BarSearch onSearch={setQuery} />
+   {Filtered.map((Project)=>
+   (<CardProjects key={Project.ProjectName} project={Project} />)) }
     
     
     </>
