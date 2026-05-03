@@ -29,25 +29,27 @@ export default function ProjectForm({onSubmission}){
     return(
         <>
         <section>
+            
 
-             <form onSubmit={Submission}>
-                <h2>Add Project</h2>
+             <form className="rounded-3xl bg-white-70 p-6 text-slate-700 shadow-sm" onSubmit={Submission}>
+                <h2 className="text-black">Add Project</h2>
+                <h3 className="text-slate-500">Fill in the details below</h3>
 
-                <label>Project Name</label>
+                <label className="font-medium text-slate-700">Project Name</label>
                 <input
-                className="bg-white rounded-3xl m-5 "
+                className="m-5 rounded-3xl border border-sky-200 bg-sky-50 px-4 py-2 outline-none"
                 type="text" 
                 value={ProjectName}
                 onChange={(e)=> setProjectName(e.target.value)}></input> 
                 <br></br>
 
-                <label className="px-4">Project Description</label>
+                <label className="px-4 font-medium text-slate-700">Project Description</label>
                 <textarea 
-                className="bg-white px-3 rounded-3xl py-4"
+                className="rounded-3xl border border-sky-200 bg-sky-50 px-3 py-4 "
                 value={ProjectDescription}
                 onChange={(e)=> setProjectDescription(e.target.value)}></textarea>
                 <br></br>
-                <button type="submit">Add Project</button>
+                <button className="rounded-xl bg-sky-700 px-10 py-2 text-white" type="submit">+ Add Project</button>
 
             </form>
 
