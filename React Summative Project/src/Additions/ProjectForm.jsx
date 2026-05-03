@@ -28,7 +28,7 @@ export default function ProjectForm(onSubmission){
                 value={ProjectDescription}
                 onChange={(e)=> setProjectDescription(e.target.value)}></textarea>
                 
-                <button>Add Project</button>
+                <button onClick={onSubmission}>Add Project</button>
 
             </form>
 
