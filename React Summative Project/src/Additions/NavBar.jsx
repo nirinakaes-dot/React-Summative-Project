@@ -6,6 +6,7 @@ export default function NavBar(){
             <h1 className="m-0 text-2xl font-bold text-white">
                 My Project Portfolio
             </h1>
+            <p className="text-slate-400 text-sm mt-0.5">Showcase Of My Work</p>
 
         </nav>
     )

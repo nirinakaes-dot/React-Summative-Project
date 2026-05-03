@@ -31,9 +31,10 @@ export default function App(){
     <div className='overflow-auto rounded-3xl border border-sky-200 bg-white/75 p-6 shadow-sm backdrop-blur-sm'>
 
     <BarSearch onSearch={setQuery} />
+    {Filtered.length ===0 ? (<p className='text-white font-bold justify-self-center'>No Projects Added</p>)
 
-   {Filtered.map((Project)=>
-   (<CardProjects key= {Project.ProjectName} project={Project} />)) }
+   :(Filtered.map((Project)=>
+   (<CardProjects key= {Project.ProjectName} project={Project} />)) )}
     
 
 
