@@ -20,15 +20,15 @@ export default function App(){
   return(
     <>
     <NavBar />
-    <div className='grid grid-cols-2 gap-2'>
+    <div className='grid gap-6 px-6 py-8 md:grid-cols-2'>
 
-      <div className='bg-pink-200'>
+      <div className='rounded-3xl border border-sky-200 bg-sky-50/80 p-6 shadow-sm'>
     
     <ProjectForm onSubmission={Submission} />
 
       </div>
 
-    <div className='bg-yellow-50'>
+    <div className='rounded-3xl border border-sky-200 bg-white/75 p-6 shadow-sm backdrop-blur-sm'>
 
     <BarSearch onSearch={setQuery} />
 
