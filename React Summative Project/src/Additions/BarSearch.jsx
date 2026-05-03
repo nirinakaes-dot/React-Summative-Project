@@ -6,6 +6,7 @@ export default function BarSearch(){
         <>
         <section>
             <form>
+                
                 <input type="text"></input>
                 <button>Search</button>
 
