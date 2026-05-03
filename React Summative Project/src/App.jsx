@@ -7,13 +7,13 @@ import { useState } from 'react'
 
 
 export default function App(){
+  const [query, setQuery] = useState('')
   
   const [Projects, setProjects]= useState([])
 
   const Submission = (newProject) => {
     setProjects([...Projects, newProject])
   }
-   const [query, setQuery] = useState('')
 
   const Filtered = Projects.filter((Project)=> Project.ProjectName.toLowerCase().includes(query.toLowerCase()))
 
@@ -24,7 +24,7 @@ export default function App(){
     <ProjectForm onSubmission={Submission} />
     <BarSearch onSearch={setQuery} />
    {Filtered.map((Project)=>
-   (<CardProjects key={Project.ProjectName} project={Project} />)) }
+   (<CardProjects key= {Project.ProjectName} project={Project} />)) }
     
     
     </>

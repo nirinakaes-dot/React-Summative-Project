@@ -1,14 +1,17 @@
 
 
-export default function BarSearch(){
+export default function BarSearch(e){
+    e.preventDefault()
+    
 
     return(
         <>
         <section>
             <form>
                 
-                <input type="text"></input>
-                <button>Search</button>
+                <input type="text"
+                onChange={(e)=> onSearch(e.target.value) }></input>
+                <button >Search</button>
 
 
 

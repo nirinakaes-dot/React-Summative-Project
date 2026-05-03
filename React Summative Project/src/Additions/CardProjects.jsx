@@ -1,13 +1,13 @@
 
 
-export default function CardProjects(){
+export default function CardProjects({project}){
 
     return(
         <>
         <section>
-            <h3>{Project.ProjectName}</h3>
+            <h3>{project.ProjectName}</h3>
 
-            <p>{Project.ProjectDescription}</p>
+            <p>{project.ProjectDescription}</p>
 
 
 
