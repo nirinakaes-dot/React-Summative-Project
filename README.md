@@ -75,5 +75,4 @@ Made by **Nina Adora** as part of the Moringa School Module 3 Summative Project.
 ## License
 Licensed by MIT
 
- ### Link to live site - open [http://localhost:5173](http://localhost:5173) in your browser.
 
